@@ -34,10 +34,10 @@ class concessionnaire {
     this.color = color;
     this.year = year;
     this.prix = prix;
-    this.frase = `The car of marca <b>${marca}</b> that it is of <b>${color}</b> color and it was manufactured in the year: <b>${year}</b> and its price was <b>${prix}$ </b> it was * SOLD * yesterday! '<br>'`;
+    this.frase = `The car of marca <b>${marca}</b> that it is of <b>${color}</b> color and it was manufactured in the year: <b>${year}</b> and its price was <b>${prix}$</b> and it was * SOLD * yesterday! `;
   }
    verInformacion(){
-     document.write(this.frase);
+     document.write(this.frase + "<br>");
    }
 }
 //vamos a declararla:
@@ -57,7 +57,7 @@ class wine {
      this.ml = ml;
      this.country = country;
      this.prices = price;
-     this.frase =`This Wine: <b>${nameProduct}</b> is a <b>${color}</b> the <b>${ml}</b> ml and the came from <b>${country}</b> a it has a good price: <b>${price}$</b> dollars"<br>";`
+     this.frase =`This Wine: <b>${nameProduct}</b> is a <b>${color}</b> the <b>${ml}</b> ml and the came from <b>${country}</b> a it has a good price: <b>${price}$</b> dollars;`
   }
   verFrase(){
     document.write(this.frase);
@@ -73,7 +73,25 @@ wines2.verFrase();
 wines3.verFrase();
 document.write("------------------ <br>");
 
+class animales {
+  constructor(especie, edad,color){
+     this.especie = especie;
+     this.edad = edad;
+     this.color = color;
+     this.frase1 = `Soy: <b>${especie}</b> tengo una edad de <b>${edad} anos </b> y soy de color <b>${color}</b>`
+  }
+  verFrase(){
+      document.write(this.frase1 + '<br>');
+  }
+}
 
+let perro = new animales('Perro', 5, 'Beige'  + '<br>');
+let gato = new animales('Gato', 3, 'Negro' + '<br>');
+let gorrion =new animales('Gorrion', 1,'Azul y Rojo' + '<br>');
+
+perro.verFrase();
+gato.verFrase();
+gorrion.verFrase();
 
 
 

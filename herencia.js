@@ -11,9 +11,6 @@ class animales {
     }
 }
 
-let perro = new animales('Perro', 5, 'Beige' + '<br>');
-let gato = new animales('Gato', 3, 'Negro' + '<br>');
-let gorrion =new animales('Gorrion', 1,'Azul y Rojo' + '<br>');
 
 
 
