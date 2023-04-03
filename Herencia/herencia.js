@@ -60,16 +60,16 @@ document.write(monTelephone.verFrase2());
     constructor(dady,mamy,brother,newFamily){
       super(dady,mamy,brother,newFamily);
       this.newFamily = newFamily;
-      this.frase =`mi family is:${dady},${mamy},${brother},${newFamily}`
+      //this.frase =`mi family is:${dady},${mamy},${brother},${newFamily}`
     }
     fraseComply(){
-      document.write(this.frases() + this.newFamily())
+      document.write(this.frases() + this.newFamily());
       //return this.frese() + 'a new person came to the new family' + this.newFamily
     }
   }
 
-  let newPerson = new newFamily('George','Melanie','john','Isabelle')
-  document.write(newPerson.fraseComply())
+  const newPerson = new newFamily('George','Melanie','john','Isabelle');
+  document.write(newPerson.fraseComply());
   //frase.innerHTML = newPerson.fraseComply()
 
 //},true)
